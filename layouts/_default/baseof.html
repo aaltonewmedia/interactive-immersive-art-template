@@ -6,11 +6,23 @@
   <meta name="description"
       content="Website meta description for google search results go here" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
   <!-- 
       include a favicon for your site if you have it, else omit the line below 
       Location of favicon can be in mytheme/static/favicon.ico
   -->
+
   <link rel='shortcut icon' type='image/x-icon' href={{ "/favicon.ico" | relURL }} />
+  
   {{ $title := print .Site.Title " | " .Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
